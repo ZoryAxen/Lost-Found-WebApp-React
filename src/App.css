@@ -1,0 +1,119 @@
+@import '@aws-amplify/ui-react/styles.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+#root {
+  padding: 0 2rem 2rem 2rem;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --purple: #3A2D97;
+  --light-purple: #554c91;
+  --dark-blue: #13044F;
+  --gray: #ADADC2;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  height: 70px;
+}
+
+.nav-icon {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--gray);
+}
+
+.nav-button {
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  font-weight: 600;
+  background-color: transparent;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.nav-button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: var(--purple);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/* End Navbar Style */
+
+/* Home Page Style */
+
+.home-section-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8em;
+}
+
+.home-section-title {
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-section-image {
+  height: 500px;
+  width: 500px;
+}
+
+/* End Home Page Style */
+
+/* Form Style */
+
+.form-button {
+  background-color: var(--purple);
+}
+
+.form-button:hover {
+  background-color: var(--light-purple);
+}
+
+.custom-file-upload {
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.preview-image {
+  border-radius: 8px;
+  max-width: '100%'; 
+  max-height: 200px;
+}
+
+/* End Form Style */
